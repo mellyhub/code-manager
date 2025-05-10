@@ -7,17 +7,6 @@ interface CodeBlockProps {
   className?: string;
 }
 
-// Helper function to safely escape HTML
-function escapeHtml(unsafe: string): string {
-  return unsafe
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#39;')
-    .replace(/\//g, '&#x2F;');
-}
-
 export function CodeBlock({ code, language, className }: CodeBlockProps) {
   const codeRef = useRef<HTMLPreElement>(null);
 
@@ -27,16 +16,12 @@ export function CodeBlock({ code, language, className }: CodeBlockProps) {
       codeRef.current.innerHTML = '';
       codeRef.current.removeAttribute('data-highlighted');
       
-      // Create new code element with proper escaping
+      // Create new code element
       const codeElement = document.createElement('code');
       codeElement.className = `language-${language}`;
       
-      // Escape HTML entities using our helper function
-      const escapedCode = escapeHtml(code);
-      
-      // Create a new text node for safe content
-      const textNode = document.createTextNode(escapedCode);
-      codeElement.appendChild(textNode);
+      // Set the code content directly
+      codeElement.textContent = code;
       
       // Append to pre element
       codeRef.current.appendChild(codeElement);
