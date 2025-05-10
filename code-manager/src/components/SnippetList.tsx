@@ -24,19 +24,19 @@ export function SnippetList({ snippets, onEdit, onDelete, className }: SnippetLi
       {snippets.map((snippet) => (
         <div
           key={snippet.id}
-          className="bg-surface-light rounded-2xl p-6 border border-accent-300 hover:border-primary hover:shadow-lg transition-all duration-200"
+          className="card p-6"
         >
           <div className="flex justify-between items-start">
             <div>
-              <h3 className="text-lg font-semibold text-text-primary mb-2">{snippet.title}</h3>
-              <div className="bg-surface-dark rounded-xl p-4">
+              <h3 className="text-lg font-semibold text-text-heading mb-2">{snippet.title}</h3>
+              <div className="bg-surface-dark rounded-xl p-4 text-text-subtle">
                 <CodeBlock code={snippet.code} language={snippet.language} />
               </div>
             </div>
             <div className="flex space-x-3 mt-3">
               <button
                 onClick={() => handleCopy(snippet.code)}
-                className="p-2 rounded-md text-accent-300 hover:bg-accent-200 transition-colors"
+                className="p-2 rounded-md hover:bg-accent-200 transition-colors"
                 title="Copy code"
               >
                 {copied === snippet.code ? (
@@ -47,7 +47,7 @@ export function SnippetList({ snippets, onEdit, onDelete, className }: SnippetLi
               </button>
               <button
                 onClick={() => onEdit(snippet)}
-                className="p-2 rounded-md text-accent-300 hover:bg-accent-200 transition-colors"
+                className="p-2 rounded-md hover:bg-accent-200 transition-colors"
                 title="Edit"
               >
                 <PencilIcon className="w-5 h-5" />

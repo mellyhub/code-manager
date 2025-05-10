@@ -37,15 +37,15 @@ function App() {
             Add New Snippet
           </Button>
         </div>
-        <div className="card p-6 rounded-2xl border border-accent-300 bg-surface-dark">
+        <div className="card p-6 rounded-2xl border bg-surface-dark">
           <div className="card-header mb-4">
-            <h2 className="text-2xl font-semibold text-text-primary tracking-tight">Your Snippets</h2>
+            <h2 className="text-2xl font-semibold text-text-heading tracking-tight">Your Snippets</h2>
           </div>
           <div className="mb-4">
             <input
               type="text"
               placeholder="Search snippets..."
-              className="w-full px-4 py-3 border border-accent-300 rounded-lg bg-surface-light text-text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1"
+              className="w-full px-4 py-3 border rounded-lg bg-surface-light text-text-subtle focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1"
               value={searchTerm}
               onChange={handleSearch}
             />

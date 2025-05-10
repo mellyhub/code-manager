@@ -89,14 +89,11 @@ export default {
         900: '#14532d',
       },
     },
-    fontFamily: {
-      sans: ['var(--font-arvo)', 'Inter', 'system-ui', 'sans-serif'],
-    },
     extend: {
       typography: {
         DEFAULT: {
           css: {
-            color: '#f8fafc',
+            color: '#bebdc0',
             a: {
               color: '#3b82f6',
               '&:hover': {
@@ -104,48 +101,48 @@ export default {
               },
             },
             h1: {
-              fontSize: '2.5rem',
-              fontWeight: '700',
-              marginTop: '1.5rem',
+              fontSize: '2.25rem',
+              fontWeight: 600,
+              lineHeight: 1.2,
+              letterSpacing: '-0.025em',
               marginBottom: '1rem',
-              letterSpacing: '-0.015em',
-              color: '#f8fafc',
             },
             h2: {
-              fontSize: '2rem',
-              fontWeight: '600',
-              marginTop: '1.5rem',
-              marginBottom: '1rem',
-              letterSpacing: '-0.01em',
-              color: '#f8fafc',
+              fontSize: '1.75rem',
+              fontWeight: 600,
+              lineHeight: 1.3,
+              letterSpacing: '-0.015em',
+              marginBottom: '0.75rem',
             },
             h3: {
-              fontSize: '1.75rem',
-              fontWeight: '600',
-              marginTop: '1.25rem',
-              marginBottom: '0.75rem',
-              letterSpacing: '-0.005em',
-              color: '#f8fafc',
-            },
-            h4: {
-              fontSize: '1.5rem',
-              fontWeight: '500',
-              marginTop: '1rem',
+              fontSize: '1.25rem',
+              fontWeight: 600,
+              lineHeight: 1.4,
+              letterSpacing: '-0.01em',
               marginBottom: '0.5rem',
-              color: '#f8fafc',
+            },
+            p: {
+              fontSize: '1rem',
+              lineHeight: 1.7,
+              marginBottom: '1rem',
+            },
+            code: {
+              fontSize: '0.875rem',
+              lineHeight: 1.6,
+              fontFamily: '"Fira Code", monospace',
             },
             'ol > li::marker': {
               fontWeight: '400',
-              color: '#94a3b8',
+              color: '#9ca3af',
             },
             'ul > li::marker': {
-              backgroundColor: '#94a3b8',
+              backgroundColor: '#9ca3af',
             },
             strong: {
-              color: '#f8fafc',
+              color: '#d1d5db',
             },
             blockquote: {
-              color: '#f8fafc',
+              color: '#d1d5db',
               borderLeftColor: '#3b82f6',
             },
           },

@@ -37,7 +37,7 @@ export const SnippetForm = ({ snippet, onSave, onCancel, className }: SnippetFor
           name="title"
           value={formValues.title}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-accent-300 rounded-lg bg-surface-light text-text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1"
+          className="w-full px-4 py-3 border rounded-lg bg-surface-light text-text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1"
           required
         />
       </div>
@@ -51,7 +51,7 @@ export const SnippetForm = ({ snippet, onSave, onCancel, className }: SnippetFor
           name="language"
           value={formValues.language}
           onChange={handleChange}
-          className="w-full px-4 py-3 border border-accent-300 rounded-lg bg-surface-light text-text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1"
+          className="w-full px-4 py-3 border rounded-lg bg-surface-light text-text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1"
         >
           <option value="javascript">JavaScript</option>
           <option value="typescript">TypeScript</option>
@@ -68,7 +68,7 @@ export const SnippetForm = ({ snippet, onSave, onCancel, className }: SnippetFor
           name="code"
           value={formValues.code}
           onChange={handleChange}
-          className="mt-2 block w-full rounded-md border border-accent-300 bg-accent-100 text-gray-300 focus:outline-none focus:ring-2 focus:ring-highlight focus:border-highlight min-h-[200px]"
+          className="mt-2 block w-full rounded-md border bg-accent-100 text-gray-300 focus:outline-none focus:ring-2 focus:ring-highlight focus:border-highlight min-h-[200px]"
           required
         />
       </div>

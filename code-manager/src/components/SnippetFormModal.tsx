@@ -28,7 +28,7 @@ export function SnippetFormModal({ isOpen, onClose, initialSnippet, onSave, clas
 
   return (
     <div className={`fixed inset-0 ${className} flex items-center justify-center z-50`}>
-      <div className="bg-surface-dark border border-accent-300 rounded-2xl p-8 w-full max-w-2xl">
+      <div className="bg-surface-dark border rounded-2xl p-8 w-full max-w-2xl">
         <div className="flex justify-between items-center mb-6">
           <h2 className="text-2xl font-bold text-text-primary tracking-tight">
             {editingSnippet ? 'Edit Snippet' : 'Add New Snippet'}

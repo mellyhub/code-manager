@@ -44,7 +44,7 @@ export function SnippetFormPage() {
           </h1>
           <Button onClick={handleCancel}>Back</Button>
         </div>
-        <div className="card p-6 rounded-xl border border-accent-300 bg-accent-100">
+        <div className="card p-6 rounded-xl border bg-accent-100">
           <SnippetForm
             snippet={editingSnippet}
             onSave={handleSave}
