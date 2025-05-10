@@ -39,8 +39,8 @@ export const createSnippet = (values: Omit<Snippet, 'id' | 'createdAt' | 'update
 
 export const getLanguageOptions = (): { value: SnippetLanguage; label: string }[] => {
   return [
-    { value: 'javascript', label: 'JavaScript' },
-    { value: 'typescript', label: 'TypeScript' },
-    { value: 'cs', label: 'C#' },
+    { value: 'Javascript', label: 'JavaScript' },
+    { value: 'Typescript', label: 'TypeScript' },
+    { value: 'C#', label: 'C#' },
   ];
 };

@@ -11,7 +11,7 @@ interface SnippetFormProps {
 export const SnippetForm = ({ snippet, onSave, onCancel, className }: SnippetFormProps) => {
   const [formValues, setFormValues] = React.useState<SnippetFormValues>({
     title: snippet?.title || '',
-    language: snippet?.language ? (snippet.language as SnippetLanguage) : 'javascript',
+    language: snippet?.language ? (snippet.language as SnippetLanguage) : 'Javascript',
     code: snippet?.code || '',
   });
 
@@ -53,9 +53,9 @@ export const SnippetForm = ({ snippet, onSave, onCancel, className }: SnippetFor
           onChange={handleChange}
           className="w-full px-4 py-3 border rounded-lg bg-surface-light text-text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1"
         >
-          <option value="javascript">JavaScript</option>
-          <option value="typescript">TypeScript</option>
-          <option value="cs">C#</option>
+          <option value="Javascript">JavaScript</option>
+          <option value="Typescript">TypeScript</option>
+          <option value="C#">C#</option>
         </select>
       </div>
 

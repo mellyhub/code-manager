@@ -28,7 +28,12 @@ export function SnippetList({ snippets, onEdit, onDelete, className }: SnippetLi
         >
           <div className="flex justify-between items-start">
             <div>
-              <h3 className="text-lg font-semibold text-text-heading mb-2">{snippet.title}</h3>
+              <div className="flex items-center gap-2 mb-2">
+                <h3 className="text-lg font-semibold text-text-heading">{snippet.title}</h3>
+                <span className="px-2 py-1 text-xs font-medium text-[#070707] bg-[#aabefe] rounded-full border border-accent-200/50">
+                  {snippet.language}
+                </span>
+              </div>
               <div className="bg-surface-dark rounded-xl p-4 text-text-subtle">
                 <CodeBlock code={snippet.code} language={snippet.language} />
               </div>

@@ -89,6 +89,12 @@ export default {
         900: '#14532d',
       },
     },
+    fontFamily: {
+      sans: ['Arvo', 'system-ui', 'sans-serif'],
+    },
+    fontWeight: {
+      normal: '400',
+    },
     extend: {
       typography: {
         DEFAULT: {
@@ -101,24 +107,24 @@ export default {
               },
             },
             h1: {
-              fontSize: '2.25rem',
-              fontWeight: 600,
-              lineHeight: 1.2,
-              letterSpacing: '-0.025em',
+              fontSize: '1.875rem',
+              fontWeight: 400,
+              lineHeight: 1.3,
+              letterSpacing: '-0.01em',
               marginBottom: '1rem',
             },
             h2: {
-              fontSize: '1.75rem',
-              fontWeight: 600,
-              lineHeight: 1.3,
-              letterSpacing: '-0.015em',
+              fontSize: '1.5rem',
+              fontWeight: 400,
+              lineHeight: 1.4,
+              letterSpacing: '-0.005em',
               marginBottom: '0.75rem',
             },
             h3: {
-              fontSize: '1.25rem',
-              fontWeight: 600,
-              lineHeight: 1.4,
-              letterSpacing: '-0.01em',
+              fontSize: '1.125rem',
+              fontWeight: 400,
+              lineHeight: 1.5,
+              letterSpacing: '-0.005em',
               marginBottom: '0.5rem',
             },
             p: {
