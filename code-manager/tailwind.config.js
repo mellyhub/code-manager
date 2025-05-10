@@ -14,19 +14,19 @@ export default {
       transparent: 'transparent',
       current: 'currentColor',
       background: {
-        DEFAULT: '#0f172a',
-        light: '#1e293b',
-        dark: '#0c1421',
+        DEFAULT: '#18181a',
+        light: '#18181a',
+        dark: '#18181a',
       },
       surface: {
-        DEFAULT: '#1e293b',
-        light: '#334155',
-        dark: '#0f172a',
+        DEFAULT: '#1e1e20',
+        light: '#1e1e20',
+        dark: '#1e1e20',
       },
       text: {
-        primary: '#f8fafc',
-        secondary: '#94a3b8',
-        muted: '#64748b',
+        primary: '#bebdc0',
+        secondary: '#bebdc0',
+        muted: '#909090',
       },
       primary: {
         50: '#eff6ff',

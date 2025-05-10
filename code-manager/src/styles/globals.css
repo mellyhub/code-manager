@@ -1,16 +1,79 @@
 @import './tailwind.css';
 @import 'highlight.js/styles/github-dark-dimmed.css';
 
-/* Ensure highlight.js styles are properly applied */
+/* Base styles */
+:root {
+  --background: #18181a;
+  --surface: #1e1e20;
+  --text-primary: #bebdc0;
+  --text-muted: #909090;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+/* Card styles */
+.card {
+  background-color: var(--surface);
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  transition: transform 0.2s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+}
+
+/* Input styles */
+input,
+select,
+textarea {
+  background-color: var(--surface);
+  color: var(--text-primary);
+  border: 1px solid var(--text-muted);
+  border-radius: 0.5rem;
+  padding: 0.75rem;
+  transition: border-color 0.2s ease;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+  outline: none;
+  border-color: #61afef;
+}
+
+/* Button styles */
+button {
+  font-weight: 500;
+  border-radius: 0.5rem;
+  padding: 0.75rem 1.5rem;
+  transition: all 0.2s ease;
+}
+
+button.primary {
+  background-color: #61afef;
+  color: white;
+}
+
+button.primary:hover {
+  background-color: #5294e2;
+}
+
+/* Highlight.js styles */
 .hljs {
   display: block;
   overflow-x: auto;
-  padding: 0.5em;
-  background: #1e1e1e;
-  color: #abb2bf;
+  padding: 1rem;
+  background: var(--surface);
+  color: var(--text-primary);
   font-family: 'Fira Code', monospace;
   font-size: 0.875rem;
-  line-height: 1.5;
+  line-height: 1.6;
+  border-radius: 0.5rem;
 }
 
 /* Add custom theme colors */
