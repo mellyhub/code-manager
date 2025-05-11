@@ -91,7 +91,7 @@ function App() {
                     setSearchTerm(e.target.value);
                   }}
                   placeholder="Search snippets..."
-                  className="w-full px-10 py-3 rounded-lg bg-surface-light border border-accent-200/50 hover:border-accent-200/70 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1"
+                  className="w-full px-10 py-3 rounded-lg bg-surface-light border transition-all duration-100 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-1"
                 />
               </div>
             </div>
@@ -99,7 +99,7 @@ function App() {
           <div className="flex justify-end">
             <button
               onClick={() => setIsEditing(true)}
-              className="flex items-center gap-2 px-6 py-3 rounded-lg bg-accent-200/10 border border-accent-200/50 hover:border-accent-200/70 transition-all duration-200 hover:bg-accent-200/20 text-text-heading font-medium text-sm tracking-tight"
+              className="flex items-center gap-2 px-6 py-3 rounded-lg bg-accent-200/10 border hover:border-accent-200/70 transition-all duration-200 hover:bg-accent-200/20 text-text-heading font-medium text-sm tracking-tight"
             >
               <span className="text-accent-200">+</span>
               <span>Add Snippet</span>
