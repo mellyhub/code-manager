@@ -1,6 +1,11 @@
 import { useEffect, useRef } from 'react';
 import hljs from 'highlight.js';
 
+// Configure highlight.js to handle HTML safely
+hljs.configure({
+  ignoreUnescapedHTML: true
+});
+
 interface CodeBlockProps {
   code: string;
   language: string;

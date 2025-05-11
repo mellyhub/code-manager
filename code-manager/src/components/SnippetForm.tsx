@@ -9,10 +9,20 @@ interface SnippetFormProps {
 }
 
 export const SnippetForm = ({ snippet, onSave, onCancel, className }: SnippetFormProps) => {
-  const [formValues, setFormValues] = React.useState<SnippetFormValues>({
-    title: snippet?.title || '',
-    language: snippet?.language ? (snippet.language as SnippetLanguage) : 'Javascript',
-    code: snippet?.code || '',
+  const isEditing = !!snippet;
+  const [formValues, setFormValues] = React.useState<SnippetFormValues>(() => {
+    if (snippet) {
+      return {
+        title: snippet.title,
+        language: snippet.language as SnippetLanguage,
+        code: snippet.code
+      };
+    }
+    return {
+      title: '',
+      language: 'javascript' as SnippetLanguage,
+      code: ''
+    };
   });
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -87,7 +97,7 @@ export const SnippetForm = ({ snippet, onSave, onCancel, className }: SnippetFor
           type="submit"
           className="btn-primary"
         >
-          {snippet ? 'Update' : 'Save'}
+          {isEditing ? 'Update' : 'Save'}
         </button>
       </div>
     </form>

@@ -7,7 +7,10 @@ export interface Snippet {
   updatedAt: string;
 }
 
-export type SnippetLanguage = 'Javascript' | 'Typescript' | 'C#';
+export type SnippetLanguage =
+  | 'Javascript'
+  | 'Typescript'
+  | 'Csharp';
 
 export interface SnippetFormValues {
   title: string;
